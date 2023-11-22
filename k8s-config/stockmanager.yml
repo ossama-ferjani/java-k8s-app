@@ -40,7 +40,7 @@ spec:
       port: 8030
       targetPort: 8030  # Define if different from the port value
       name: http
-      nodePort: 31000   # Specify a specific nodePort if needed
+      nodePort: 31001   # Specify a specific nodePort if needed
 
 
 ---
