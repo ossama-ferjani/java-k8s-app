@@ -36,8 +36,11 @@ spec:
   selector:
     app: stockmanager
   ports:
-  - protocol: TCP
-    port: 8030
-    name: http
+    - protocol: TCP
+      port: 8030
+      targetPort: 8030  # Define if different from the port value
+      name: http
+      nodePort: 31000   # Specify a specific nodePort if needed
+
 
 ---
