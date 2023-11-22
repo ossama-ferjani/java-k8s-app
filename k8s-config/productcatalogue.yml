@@ -36,7 +36,9 @@ spec:
   selector:
     app: productcatalogue
   ports:
-  protocol: TCP
-  port: 8020
-  name: http
-
+    - protocol: TCP
+      port: 8020
+      targetPort: 8020
+      name: http
+      nodePort: 31000  # Specify a specific nodePort if needed
+  
